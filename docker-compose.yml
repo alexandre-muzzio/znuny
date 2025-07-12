@@ -1,0 +1,26 @@
+services:
+  znuny:
+    image: znuny:6.5.15
+    container_name: znuny-6.5.15
+    ports:
+      - '80:80'
+    # If running behind a proxy container, expose the ports instead
+    # and link the proxy container to this one.
+    #  expose:
+    #  - "80"
+    volumes:
+      - ./backups:/var/otrs/backups
+      - /etc/localtime:/etc/localtime:ro
+      - ./volumes/otrs/:/opt/otrs/
+
+  mariadb:
+    image: mariadb-znuny:10.1
+    container_name: mariadb-znuny
+    ports:
+      - '3306:3306'
+    volumes:
+      - ./mariadb/init:/docker-entrypoint-initdb.d
+      - ./volumes/mysql:/var/lib/mysql
+      - /etc/localtime:/etc/localtime:ro
+  
+

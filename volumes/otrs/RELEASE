@@ -1,0 +1,5 @@
+PRODUCT = Znuny
+VERSION = 6.5.15
+BUILDDATE = Wed Apr 30 13:09:44 CEST 2025
+BUILDHOST = ci-runner-03.internal.znuny.com
+COMMIT_ID = 7e7301d9b29dd3cfca31dcc4d1143f4d01cafd56
