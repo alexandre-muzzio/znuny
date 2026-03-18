@@ -16,8 +16,9 @@ Em uma máquina GNU/Linux (testado no Rocky Linux 8 e 9) com Docker instalado ex
 6 - cd mariadb <br>
 7 - docker build -t mariadb-znuny:10.1 . <br>
 8 - cd /opt/docker/znuny/znuny <br>
-9 - rm -rf /opt/docker/znuny/znuny/volumes/otrs
-10 - tar zxvf otrs-config-limpo.tar.gz
-11 - mv otrs /opt/docker/znuny/znuny/volumes/
-12 - docker compose up -d
-13 - http://<IP docker>/otrs/installer.pl
+9 - rm -rf /opt/docker/znuny/znuny/volumes/otrs <br>
+10 - tar zxvf otrs-config-limpo.tar.gz <br>
+11 - mv otrs /opt/docker/znuny/znuny/volumes/ <br>
+12 - docker compose up -d <br>
+13 - http://<IP docker>/otrs/installer.pl <br>
+14 - Leia o texto inicial desse tutorial <br>
